@@ -25,27 +25,27 @@ const HeroSection = () => {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
+              href="#get-the-app"
               className="inline-flex items-center gap-2 rounded-md gold-gradient px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
               Get Started <ArrowRight className="h-4 w-4" />
             </a>
-            <a
+            {/* <a
               href="#"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
             >
               View Demo
-            </a>
+            </a> */}
           </div>
 
-          <div className="flex items-center gap-3 pt-4">
+          {/* <div className="flex items-center gap-3 pt-4">
             <span className="text-label text-muted-foreground">Trusted by:</span>
             <div className="flex gap-4 text-muted-foreground/40">
               {["●", "■", "▲", "◆", "⬟"].map((s, i) => (
                 <span key={i} className="text-lg">{s}</span>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex-1 relative">
