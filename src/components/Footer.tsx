@@ -4,6 +4,7 @@ const footerLinks = {
   Company: [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms and Conditions", href: "/terms-and-conditions" },
+    { label: "Account Deletion Policy", href: "/account-deletion-policy" },
     { label: "Contact Us", href: "/contact-us" },
   ],
 };
