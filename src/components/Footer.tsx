@@ -5,6 +5,7 @@ const footerLinks = {
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms and Conditions", href: "/terms-and-conditions" },
     { label: "Account Deletion Policy", href: "/account-deletion-policy" },
+    { label: "Child Safety & CSAM Policy", href: "/child-safety" },
     { label: "Contact Us", href: "/contact-us" },
   ],
 };
