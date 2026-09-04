@@ -7,7 +7,10 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1.25rem",
+        sm: "2rem",
+      },
       screens: {
         "2xl": "1400px",
       },
@@ -80,11 +83,37 @@ export default {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "pulse-ring": {
+          "0%": { transform: "scale(0.9)", opacity: "0.7" },
+          "70%": { transform: "scale(1.6)", opacity: "0" },
+          "100%": { transform: "scale(1.6)", opacity: "0" },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        aurora: {
+          "0%, 100%": { transform: "translate3d(0, 0, 0) scale(1)" },
+          "50%": { transform: "translate3d(4%, -6%, 0) scale(1.12)" },
+        },
+        "slide-down": {
+          from: { opacity: "0", transform: "translateY(-8px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
+        float: "float 6s ease-in-out infinite",
+        "pulse-ring": "pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        marquee: "marquee 32s linear infinite",
+        aurora: "aurora 18s ease-in-out infinite",
+        "slide-down": "slide-down 0.25s ease-out",
       },
     },
   },
