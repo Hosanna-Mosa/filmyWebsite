@@ -47,10 +47,22 @@
 
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-  }
-}
 
-@layer base {
+    /* Height of the fixed navbar, used for scroll offsets. */
+    --nav-height: 4rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   * {
     @apply border-border;
   }
@@ -58,10 +70,22 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    /* Prevents interactive/parallax elements from creating a sideways scroll. */
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+  }
+
+  /* Anchored sections clear the fixed navbar when jumped to. */
+  section[id] {
+    scroll-margin-top: calc(var(--nav-height) + 1rem);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
   }
 }
 
@@ -74,7 +98,90 @@
     background: linear-gradient(135deg, hsl(42 65% 55%), hsl(35 80% 45%));
   }
 
+  .gold-text {
+    background: linear-gradient(135deg, hsl(45 80% 70%), hsl(35 80% 48%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   .card-glow {
     box-shadow: 0 0 0 1px hsl(40 10% 18%), 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+  }
+
+  /* Scroll-reveal: paired with the useReveal hook. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Faint film-grid backdrop for hero/CTA bands. */
+  .grid-backdrop {
+    background-image:
+      linear-gradient(hsl(40 10% 18% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(40 10% 18% / 0.5) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 20%, transparent 75%);
+  }
+
+  /* Cursor-tracked highlight; --mx/--my are set inline by the component. */
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(
+      320px circle at var(--mx, 50%) var(--my, 50%),
+      hsl(42 65% 55% / 0.14),
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+
+  .marquee-track {
+    animation: marquee 32s linear infinite;
+  }
+
+  .marquee-mask {
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .marquee-track {
+      animation: none;
+    }
+  }
+}
+
+/* Declared outside @layer so the marquee utility above always has its frames. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
