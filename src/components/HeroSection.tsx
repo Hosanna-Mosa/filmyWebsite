@@ -92,11 +92,11 @@ const HeroSection = () => {
           </Reveal>
 
           <Reveal delay={240}>
-            <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap lg:items-start lg:justify-start">
-              <PrimaryDownloadButton />
+            <div className="mx-auto flex w-full max-w-xs flex-col gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center lg:mx-0 lg:justify-start">
+              <PrimaryDownloadButton className="w-full justify-center sm:w-auto" />
               <a
                 href="#features"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:bg-muted"
+                className="inline-flex min-h-[3.75rem] w-full items-center justify-center gap-2 rounded-xl border border-border bg-secondary px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:bg-muted sm:min-h-0 sm:w-auto sm:py-3.5"
               >
                 See what's inside
                 <ChevronDown className="h-4 w-4" />
@@ -105,7 +105,10 @@ const HeroSection = () => {
           </Reveal>
 
           <Reveal delay={320}>
-            <StoreButtons size="sm" className="items-center lg:items-start" />
+            <StoreButtons
+              size="sm"
+              className="mx-auto w-full max-w-xs sm:max-w-none sm:justify-center lg:mx-0 lg:justify-start"
+            />
           </Reveal>
 
           <Reveal delay={400}>

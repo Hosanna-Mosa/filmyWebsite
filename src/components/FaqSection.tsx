@@ -8,7 +8,7 @@ import Reveal from "@/components/Reveal";
 
 const faqs = [
   {
-    question: "Is FilmyApp free to download?",
+    question: "Is FilmyConnect free to download?",
     answer:
       "Yes. FilmyConnect is free on both the App Store and Google Play. Create your profile, browse casting calls, and connect with crew without paying anything up front.",
   },

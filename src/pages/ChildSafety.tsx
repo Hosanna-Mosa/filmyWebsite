@@ -34,10 +34,10 @@ const ChildSafety = () => {
             For any child safety concerns, suspected CSAM, or urgent safety issues involving a minor on our platform,
             please contact us at{" "}
             <a
-              href="mailto:Filmyconnectpvt2@gmail.com"
+              href="mailto:support@filmyconnect24.com"
               className="font-medium text-primary underline-offset-4 hover:underline"
             >
-              Filmyconnectpvt2@gmail.com
+              support@filmyconnect24.com
             </a>
             .
           </p>

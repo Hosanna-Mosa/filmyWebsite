@@ -27,7 +27,7 @@ const AppDownloadSection = () => {
             <Reveal>
               <p className="text-label mb-3 text-primary">Get the App</p>
               <h2 className="font-heading text-3xl text-foreground sm:text-4xl md:text-5xl">
-                FilmyApp is built for on-set speed.
+                FilmyConnect is built for on-set speed.
               </h2>
               <p className="mt-4 max-w-xl text-base text-muted-foreground">
                 Track projects, connect with crew, and manage talent from
