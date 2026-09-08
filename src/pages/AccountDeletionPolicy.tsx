@@ -12,7 +12,7 @@ const AccountDeletionPolicy = () => {
                     </p>
 
                     <p className="mt-8 text-base text-muted-foreground">
-                        At FILMYAPP, we respect your right to manage your account and data.
+                        At FILMYCONNECT, we respect your right to manage your account and data.
                         This policy outlines the process and implications of deleting your account.
                     </p>
 
@@ -26,7 +26,7 @@ const AccountDeletionPolicy = () => {
                             </p>
                             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                                 <li><strong>In-App:</strong> Go to Settings &gt; Account &gt; Delete Account and follow the prompts.</li>
-                                <li><strong>Via Email:</strong> Send an email from your registered email address to <strong>Filmyconnectpvt2@gmail.com</strong> with the subject "Account Deletion Request".</li>
+                                <li><strong>Via Email:</strong> Send an email from your registered email address to <strong>support@filmyconnect24.com</strong> with the subject "Account Deletion Request".</li>
                             </ul>
                         </section>
 
@@ -64,8 +64,8 @@ const AccountDeletionPolicy = () => {
                                 4. Third-Party Integrations
                             </h2>
                             <p className="mt-3 text-sm text-muted-foreground">
-                                If you have linked your FILMYAPP account to third-party services (like social media logins),
-                                deleting your FILMYAPP account will disconnect these links but will not delete your data on
+                                If you have linked your FILMYCONNECT account to third-party services (like social media logins),
+                                deleting your FILMYCONNECT account will disconnect these links but will not delete your data on
                                 those third-party platforms.
                             </p>
                         </section>
@@ -79,7 +79,7 @@ const AccountDeletionPolicy = () => {
                             </p>
                             <div className="mt-3 text-sm text-muted-foreground">
                                 <p>FILMY CONNECT PRIVATE LIMITED</p>
-                                <p>Email: Filmyconnectpvt2@gmail.com</p>
+                                <p>Email: support@filmyconnect24.com</p>
                             </div>
                         </section>
                     </div>

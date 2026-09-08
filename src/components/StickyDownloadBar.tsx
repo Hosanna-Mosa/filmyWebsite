@@ -34,7 +34,7 @@ const StickyDownloadBar = () => {
     >
       <div className="flex items-center gap-3">
         <img
-          src="/filmyAppIcon.png"
+          src="/logo.jpeg"
           alt=""
           className="h-10 w-10 shrink-0 rounded-lg object-cover"
           width={40}

@@ -213,7 +213,7 @@ const PrivacyPolicy = () => {
                 <li><strong>Withdraw consent</strong> at any time</li>
               </ul>
               <p className="mt-3 text-sm text-muted-foreground">
-                Contact us at Filmyconnectpvt2@gmail.com to make a request.
+                Contact us at support@filmyconnect24.com to make a request.
               </p>
             </section>
 
@@ -258,7 +258,7 @@ const PrivacyPolicy = () => {
                 Company: FILMY CONNECT PRIVATE LIMITED
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Email: Filmyconnectpvt2@gmail.com
+                Email: support@filmyconnect24.com
               </p>
             </section>
           </div>

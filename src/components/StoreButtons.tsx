@@ -90,7 +90,7 @@ export const StoreBadge = ({
       <span className="relative">
         <span
           className={cn(
-            "block uppercase tracking-[0.2em] text-muted-foreground",
+            "hidden uppercase tracking-[0.2em] text-muted-foreground sm:block",
             small ? "text-[10px]" : "text-xs",
           )}
         >
@@ -99,7 +99,7 @@ export const StoreBadge = ({
         <span
           className={cn(
             "block font-semibold leading-tight",
-            small ? "text-sm" : "text-lg",
+            small ? "text-sm sm:text-sm" : "text-base sm:text-lg",
           )}
         >
           {name}
@@ -146,7 +146,7 @@ export const PrimaryDownloadButton = ({ className }: { className?: string }) => 
       href={storeUrl ?? "#get-the-app"}
       {...(storeUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
-        "group inline-flex items-center gap-2 rounded-md gold-gradient px-6 py-3 text-sm font-semibold text-primary-foreground",
+        "group inline-flex min-h-[3.75rem] items-center gap-2 rounded-xl gold-gradient px-6 py-3 text-sm font-semibold text-primary-foreground sm:min-h-0 sm:py-3.5",
         "transition-all duration-300 hover:opacity-90 hover:shadow-[0_12px_32px_-8px_hsl(42_65%_55%/0.7)]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className,

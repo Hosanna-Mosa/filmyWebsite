@@ -1,4 +1,4 @@
-import { ArrowUp, Mail } from "lucide-react";
+import { ArrowUp, Instagram, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import StoreButtons from "@/components/StoreButtons";
 
@@ -24,8 +24,8 @@ const Footer = () => {
             <Link to="/" className="group flex items-center gap-2">
               <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded transition-transform duration-300 group-hover:scale-110 motion-reduce:transform-none">
                 <img
-                  src="/filmyAppIcon.png"
-                  alt="FilmyApp icon"
+                  src="/logo.jpeg"
+                  alt="FilmyConnect icon"
                   className="h-full w-full object-cover"
                   loading="lazy"
                   width={32}
@@ -33,20 +33,54 @@ const Footer = () => {
                 />
               </span>
               <span className="font-heading text-lg font-bold text-foreground">
-                FILMYAPP
+                FILMYCONNECT
               </span>
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
               Redefining how the world makes cinema. The exclusive ecosystem for
               high-end professional film production and networking.
             </p>
-            <a
-              href="mailto:Filmyconnectpvt2@gmail.com"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-            >
-              <Mail className="h-4 w-4" />
-              Filmyconnectpvt2@gmail.com
-            </a>
+            <div className="max-w-sm rounded-xl border border-border bg-secondary p-4">
+              <h4 className="text-label mb-3 text-foreground">Get in touch</h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="mailto:support@filmyconnect24.com"
+                    className="group/contact flex items-center gap-3 text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover/contact:bg-primary group-hover/contact:text-primary-foreground">
+                      <Mail className="h-4 w-4" />
+                    </span>
+                    support@filmyconnect24.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+919494894648"
+                    className="group/contact flex items-center gap-3 text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover/contact:bg-primary group-hover/contact:text-primary-foreground">
+                      <Phone className="h-4 w-4" />
+                    </span>
+                    +91 94948 94648
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/filmyconnectofficial"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="FilmyConnect on Instagram"
+                    className="group/contact flex items-center gap-3 text-sm font-medium text-foreground transition-colors hover:text-primary"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover/contact:bg-primary group-hover/contact:text-primary-foreground">
+                      <Instagram className="h-4 w-4" />
+                    </span>
+                    @filmyconnectofficial
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {Object.entries(footerLinks).map(([title, links]) => (
@@ -78,7 +112,7 @@ const Footer = () => {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            © 2026 FilmyApp Inc. All rights reserved.
+            © 2026 FilmyConnect Inc. All rights reserved.
           </p>
           <button
             type="button"

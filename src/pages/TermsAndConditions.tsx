@@ -65,7 +65,7 @@ const TermsAndConditions = () => {
               <h3 className="mt-5 text-sm font-semibold text-foreground">4.3 Refunds</h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 All purchases are final unless the service is not delivered as described. Refund requests may be
-                submitted to Filmyconnectpvt2@gmail.com and will be evaluated on a case-by-case basis.
+                submitted to support@filmyconnect24.com and will be evaluated on a case-by-case basis.
               </p>
             </section>
 
@@ -139,7 +139,7 @@ const TermsAndConditions = () => {
               <h2 className="text-lg font-semibold text-foreground">11. Termination</h2>
               <p className="mt-3 text-sm text-muted-foreground">
                 We may suspend or terminate accounts that violate these terms. You will be notified where possible
-                and may appeal by contacting Filmyconnectpvt2@gmail.com.
+                and may appeal by contacting support@filmyconnect24.com.
               </p>
             </section>
 
@@ -161,7 +161,7 @@ const TermsAndConditions = () => {
             <section>
               <h2 className="text-lg font-semibold text-foreground">14. Contact</h2>
               <p className="mt-3 text-sm text-muted-foreground">Company: FILMY CONNECT PRIVATE LIMITED</p>
-              <p className="mt-1 text-sm text-muted-foreground">Email: Filmyconnectpvt2@gmail.com</p>
+              <p className="mt-1 text-sm text-muted-foreground">Email: support@filmyconnect24.com</p>
             </section>
           </div>
         </div>

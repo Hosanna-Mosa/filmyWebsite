@@ -83,7 +83,7 @@ const RolesSection = () => {
             Built for Every Role on Set
           </h2>
           <p className="mt-4 max-w-xl text-sm text-muted-foreground sm:text-base">
-            Pick your craft to see how FilmyApp fits into your day.
+            Pick your craft to see how FilmyConnect fits into your day.
           </p>
         </Reveal>
 

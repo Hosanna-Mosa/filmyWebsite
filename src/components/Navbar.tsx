@@ -93,11 +93,11 @@ const Navbar = () => {
           to="/"
           onClick={() => setMobileOpen(false)}
           className="group flex items-center gap-2"
-          aria-label="FilmyApp home"
+          aria-label="FilmyConnect home"
         >
           <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded transition-transform duration-300 group-hover:scale-110 motion-reduce:transform-none">
             <img
-              src="/filmyAppIcon.png"
+              src="/logo.jpeg"
               alt=""
               className="h-full w-full object-cover"
               width={32}
@@ -105,7 +105,7 @@ const Navbar = () => {
             />
           </span>
           <span className="font-heading text-lg font-bold tracking-wide text-foreground">
-            FILMYAPP
+            FILMYCONNECT
           </span>
         </Link>
 
